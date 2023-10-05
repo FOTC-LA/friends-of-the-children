@@ -51,6 +51,7 @@ export default function NewFilePopup(props) {
   };
 
   const updateFileLinksFirebase = async () => {
+    console.log(fileLinks)
     await api.updateFileLinksField(fileLinks, id, 'fileLinks', 'addFile', 'modules');
     // // Only call firebase if edits were made
     // if (titleText !== title && bodyText !== body) {
